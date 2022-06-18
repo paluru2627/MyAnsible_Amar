@@ -1,0 +1,10 @@
+---
+- students:
+   name:
+    amar:
+     streetno:12
+     adress:3-14
+    sunny:
+     streetno:13
+     adress:3-25
+     
