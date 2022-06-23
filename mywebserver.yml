@@ -2,14 +2,26 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want install webserver
+  - name: i want install webserver on ubuntu
     apt:
      name: apache2
      state: present
     when: ansible_os_family=="Debian" 
 
-  - name: i want start web server
+  - name: i want start web server on ununtu
     service:
      name: apache2
      state: started
     when: ansible_os_family=="Debian"es
+
+  - name: i want install webserver on amazon
+    yum:
+     name: httpd
+     state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: i want start webserver on amazon
+    service:
+     name: httpd
+     state: started
+    when: ansible_os_family=="Redhat"
