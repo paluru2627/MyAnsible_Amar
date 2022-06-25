@@ -1,0 +1,8 @@
+[webservers]
+172.31.81.137
+172.31.86.19
+
+[webservers:vars]
+variable= value
+mywebpackonubuntu: apache2
+mywebpackonredhat: httpd
