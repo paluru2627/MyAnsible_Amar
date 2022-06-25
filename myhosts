@@ -3,7 +3,7 @@
  172.31.86.19
 
  [mywebserver: vars]
- mywebseronubuntu: apache2
- mywebserveronredhat: httpd
+  mywebseronubuntu: apache2
+  mywebserveronredhat: httpd
 
  
