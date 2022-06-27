@@ -9,4 +9,14 @@
    - name: i want to see full information of task1
      debug:
       msg: "{{myfirstttask}}"
+
+   - name: install tree
+     apt:
+      state: present
+     when: myfirstttask.stderr ==""
+
+   - name: install git
+     apt:
+      state: present
+     when: myfirstttask.stderr !=""
     
