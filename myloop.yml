@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.81.137
+  become: yes
+  tasks:
+  - name: i want excecute multiple tasks
+    apt:
+     name: "{{ item }}"
+     state: present
+    loop:
+      -git
+      -tree
+      -wget
