@@ -13,4 +13,8 @@
     apt:
      name: apache2
      state: present
+  - name: i want create dynamic files
+    template:
+     src: myindex.j2
+     dest: /var/www/html/index.html
     
