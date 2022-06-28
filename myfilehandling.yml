@@ -6,6 +6,6 @@
 
   - name: i want create a static file
     copy:
-     src:
+     src: mystatic
      dest: /home/ubuntu/staticfile
     
